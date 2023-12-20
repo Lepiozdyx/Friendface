@@ -11,6 +11,10 @@
 		FA432D962B31F08E00B0DE4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA432D952B31F08E00B0DE4F /* ContentView.swift */; };
 		FA432D982B31F09000B0DE4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA432D972B31F09000B0DE4F /* Assets.xcassets */; };
 		FA432D9B2B31F09000B0DE4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA432D9A2B31F09000B0DE4F /* Preview Assets.xcassets */; };
+		FA432DA22B31F0B000B0DE4F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA432DA12B31F0B000B0DE4F /* User.swift */; };
+		FA432DA62B31F20A00B0DE4F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA432DA52B31F20A00B0DE4F /* NetworkManager.swift */; };
+		FA432DA92B322A1400B0DE4F /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA432DA82B322A1400B0DE4F /* UserViewModel.swift */; };
+		FA432DAC2B32524800B0DE4F /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA432DAB2B32524800B0DE4F /* UserDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		FA432D952B31F08E00B0DE4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA432D972B31F09000B0DE4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA432D9A2B31F09000B0DE4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA432DA12B31F0B000B0DE4F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA432DA52B31F20A00B0DE4F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FA432DA82B322A1400B0DE4F /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		FA432DAB2B32524800B0DE4F /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,11 @@
 			children = (
 				FA432D932B31F08E00B0DE4F /* FriendfaceApp.swift */,
 				FA432D952B31F08E00B0DE4F /* ContentView.swift */,
-				FA432D972B31F09000B0DE4F /* Assets.xcassets */,
+				FA432DAB2B32524800B0DE4F /* UserDetailsView.swift */,
+				FA432DAA2B322A1800B0DE4F /* ViewModels */,
+				FA432DA72B31F20F00B0DE4F /* Services */,
+				FA432DA32B31F0D000B0DE4F /* Models */,
+				FA432DA42B31F0DC00B0DE4F /* Resources */,
 				FA432D992B31F09000B0DE4F /* Preview Content */,
 			);
 			path = Friendface;
@@ -65,6 +77,38 @@
 				FA432D9A2B31F09000B0DE4F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA432DA32B31F0D000B0DE4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA432DA12B31F0B000B0DE4F /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA432DA42B31F0DC00B0DE4F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA432D972B31F09000B0DE4F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA432DA72B31F20F00B0DE4F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA432DA52B31F20A00B0DE4F /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA432DAA2B322A1800B0DE4F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FA432DA82B322A1400B0DE4F /* UserViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA432DA62B31F20A00B0DE4F /* NetworkManager.swift in Sources */,
+				FA432DA22B31F0B000B0DE4F /* User.swift in Sources */,
+				FA432DAC2B32524800B0DE4F /* UserDetailsView.swift in Sources */,
 				FA432D962B31F08E00B0DE4F /* ContentView.swift in Sources */,
+				FA432DA92B322A1400B0DE4F /* UserViewModel.swift in Sources */,
 				FA432D942B31F08E00B0DE4F /* FriendfaceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

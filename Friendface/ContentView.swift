@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = UserViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List(viewModel.users) { user in
+                NavigationLink(value: user) {
+                    HStack {
+                        VStack {
+                            Text(user.isActive ? "online" : "offline")
+                                .font(.caption2)
+                            
+                            Text(user.isActive ? "🟢" : "🔴")
+                                .font(.caption2)
+                        }
+                        
+                        Text(user.name)
+                    }
+                }
+            }
+            .navigationTitle("Friends")
+            .navigationDestination(for: User.self) { selectedUser in
+                UserDetailsView(user: selectedUser)
+            }
         }
-        .padding()
     }
 }
 
