@@ -27,16 +27,18 @@ struct UserDetailsView: View {
             Section("Registration date") {
                 Text("\(user.registered.formatted(date: .long, time: .shortened))")
             }
- 
-            Menu("See tags") {
-                ForEach(user.tags, id: \.self) {
-                    Text($0)
-                }
-            }
             
-            Menu("See friends") {
-                ForEach(user.friends) {
-                    Text($0.name)
+            Section("More info") {
+                Menu("See tags") {
+                    ForEach(user.tags, id: \.self) {
+                        Text($0)
+                    }
+                }
+                
+                Menu("See friends") {
+                    ForEach(user.friends) {
+                        Text($0.name)
+                    }
                 }
             }
         }

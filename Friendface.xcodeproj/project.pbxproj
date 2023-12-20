@@ -60,11 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				FA432D932B31F08E00B0DE4F /* FriendfaceApp.swift */,
-				FA432D952B31F08E00B0DE4F /* ContentView.swift */,
-				FA432DAB2B32524800B0DE4F /* UserDetailsView.swift */,
+				FA432DA32B31F0D000B0DE4F /* Models */,
+				FAB90CCD2B3362DB00445BA0 /* Views */,
 				FA432DAA2B322A1800B0DE4F /* ViewModels */,
 				FA432DA72B31F20F00B0DE4F /* Services */,
-				FA432DA32B31F0D000B0DE4F /* Models */,
 				FA432DA42B31F0DC00B0DE4F /* Resources */,
 				FA432D992B31F09000B0DE4F /* Preview Content */,
 			);
@@ -109,6 +108,15 @@
 				FA432DA82B322A1400B0DE4F /* UserViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FAB90CCD2B3362DB00445BA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA432D952B31F08E00B0DE4F /* ContentView.swift */,
+				FA432DAB2B32524800B0DE4F /* UserDetailsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
