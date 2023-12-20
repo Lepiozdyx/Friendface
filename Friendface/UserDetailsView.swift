@@ -11,7 +11,6 @@ struct UserDetailsView: View {
     let user: User
     
     var body: some View {
-        
         List {
             Section("Personal info") {
                 HStack {
@@ -28,15 +27,15 @@ struct UserDetailsView: View {
             Section("Registration date") {
                 Text("\(user.registered.formatted(date: .long, time: .shortened))")
             }
-            
-            Section("Tags") {
+ 
+            Menu("See tags") {
                 ForEach(user.tags, id: \.self) {
                     Text($0)
                 }
             }
             
-            Section("Friends") {
-                ForEach(user.friends, id: \.self) {
+            Menu("See friends") {
+                ForEach(user.friends) {
                     Text($0.name)
                 }
             }
