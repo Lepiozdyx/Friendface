@@ -7,8 +7,9 @@
 
 import Foundation
 
+@Observable
 final class UserViewModel: ObservableObject {
-    @Published var users: [User] = []
+    var users: [User] = []
     
     private let networkManager = NetworkManager.shared
     

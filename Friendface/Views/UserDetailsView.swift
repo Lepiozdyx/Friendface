@@ -44,6 +44,7 @@ struct UserDetailsView: View {
         }
         .navigationTitle(user.name)
         .navigationBarTitleDisplayMode(.inline)
+        .listStyle(.grouped)
     }
 }
 

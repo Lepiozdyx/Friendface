@@ -28,6 +28,7 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Friends")
+            .listStyle(.grouped)
             .navigationDestination(for: User.self) { selectedUser in
                 UserDetailsView(user: selectedUser)
             }
